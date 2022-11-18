@@ -9,9 +9,7 @@ def cf (main = str , serch = str):
         start = s+1
     print("place = ",L)
 #______________________________________________________________________________
-#Main = str(input("enter main string : "))
-Main = "this is a simple text"
-#Serch = str(input("enter serch string : "))
-Serch = "i"
+Main = str(input("enter main string : "))
+Serch = str(input("enter serch string : "))
 #______________________________________________________________________________
 cf(Main , Serch)
