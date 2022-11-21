@@ -5,7 +5,7 @@ def cf (main = str , search = str):
     L= []
     for i in range(Count):
         s = main.find(search,start)
-        L.append(s+1)
+        L.append(s)
         start = s+1
     print("place = ",L)
 #______________________________________________________________________________
