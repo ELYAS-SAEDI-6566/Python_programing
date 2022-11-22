@@ -1,11 +1,12 @@
-program_num = input("""Enter the number of program you want to run
-[1] count find def list     [2] delete list element""")
+program_num = input("""[1] count find def list     [2] delete list element
+Enter the number of program you want to run : """)
 match program_num:
     case "1" :
+        Main = str(input("enter main string : "))
+        Search = str(input("enter search string : "))
         import count_find_def_list
-        count_find_def_list()
+        count_find_def_list.cf(Main , Search)
     case "2" :
-        import delete_list_element
         import make_list
         List = make_list.type_int()
         print("The list is ",List)
@@ -22,4 +23,7 @@ match program_num:
             else:
                 element = input(error)
                 continue
+        import delete_list_element
         print("New list : ",delete_list_element(List , element))
+    case "3" :
+        

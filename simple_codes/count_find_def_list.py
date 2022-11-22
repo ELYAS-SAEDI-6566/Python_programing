@@ -8,8 +8,3 @@ def cf (main = str , search = str):
         L.append(s)
         start = s+1
     print("place = ",L)
-#______________________________________________________________________________
-Main = str(input("enter main string : "))
-Search = str(input("enter search string : "))
-#______________________________________________________________________________
-cf(Main , Search)
