@@ -27,6 +27,7 @@ match program_num:
         import delete_list_element
         print("New list : ",delete_list_element.delete_element(List , element))
     case "3" :
-        text = "this ## is a #sample#test1 #test2 #test3#test4 ##test5"
+        text = "this ## is a #sample#test1 ###python #test2 #test3#test4 ##test5"
+        print("The main text is : " + text)
         import extract_hashtag
-        print(extract_hashtag.find_hashtag(text))
+        print("Hashtags list : " , extract_hashtag.find_hashtag(text))
