@@ -25,7 +25,7 @@ match program_num:
                 element = input(error)
                 continue
         import delete_list_element
-        print("New list : ",delete_list_element(List , element))
+        print("New list : ",delete_list_element.delete_element(List , element))
     case "3" :
         text = "this ## is a #sample#test1 #test2 #test3#test4 ##test5"
         import extract_hashtag

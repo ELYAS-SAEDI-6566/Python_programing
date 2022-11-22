@@ -9,5 +9,5 @@ def find_hashtag(string):
     for hashWord in strList:
         result =  result + hashWord.split("#")[1:]
     strList = result
-    from delete_list_element import delete_list_element
-    return delete_list_element(strList , "")
+    import delete_list_element
+    return delete_list_element.delete_element(strList , "")
