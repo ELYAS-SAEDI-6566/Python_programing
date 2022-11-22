@@ -11,6 +11,3 @@ def find_hashtag(string):
     strList = result
     from delete_list_element import delete_list_element
     return delete_list_element(strList , "")
-#________________Test code____________________________________#
-# text = "this ## is a #sample#test1 #test2 #test3#test4 ##test5"
-# print(find_hashtag(text))

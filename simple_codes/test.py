@@ -1,4 +1,5 @@
 program_num = input("""[1] count find def list     [2] delete list element
+[3] find hashtags
 Enter the number of program you want to run : """)
 match program_num:
     case "1" :
@@ -26,4 +27,6 @@ match program_num:
         import delete_list_element
         print("New list : ",delete_list_element(List , element))
     case "3" :
-        
+        text = "this ## is a #sample#test1 #test2 #test3#test4 ##test5"
+        import extract_hashtag
+        print(extract_hashtag.find_hashtag(text))
