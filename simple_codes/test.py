@@ -27,11 +27,13 @@ match program_num:
         import delete_list_element
         print("New list : ",delete_list_element.delete_element(List , element))
     case "3" :
-        text = "this ## is a #sample#test1 ###python #test2 #test3#test4 #is_hashtag not_hashtag##test5"
+        text = str(input("Enter the text : "))
+        #text = "this ## is a #sample#test1 ###python #test2 #test3#test4 #is_hashtag not_hashtag##test5"
         print("The main text is : " + text)
         import extract_hashtag
         print("Hashtags list : " , extract_hashtag.find_hashtag(text))
     case "4" :
-        text = "I Am from Iran it iS rainy and i like rain"
+        text = str(input("Enter the text :"))
+        #text = "I Am from Iran it iS rainy and i like rain"
         import edit_text
         print(edit_text.reverse(text))
