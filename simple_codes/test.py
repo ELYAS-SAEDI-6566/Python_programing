@@ -1,5 +1,5 @@
-program_num = input("""[1] count find def list     [2] delete list element
-[3] find hashtags
+program_num = input("""[1] Count find def list     [2] Delete list element
+[3] Find hashtags           [4] Reverse text words
 Enter the number of program you want to run : """)
 match program_num:
     case "1" :
@@ -31,3 +31,7 @@ match program_num:
         print("The main text is : " + text)
         import extract_hashtag
         print("Hashtags list : " , extract_hashtag.find_hashtag(text))
+    case "4" :
+        text = "I Am from Iran it iS rainy and i like rain"
+        import edit_text
+        print(edit_text.reverse(text))
