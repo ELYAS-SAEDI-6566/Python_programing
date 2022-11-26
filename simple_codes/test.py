@@ -9,23 +9,16 @@ match program_num:
         count_find_def_list.cf(Main , Search)
     case "2" :
         import make_list
-        List = make_list.type_int()
+        List = make_list.numbers_type_str()
         print("The list is ",List)
-        element = input("Which one should be remove ? : ")
+        element = str(input("Which one should be remove ? : "))
         error = "The element isnt in list  \nEnter one of list : "
         while True:
-            try:
-                element = int(element)
-            except ValueError:
-                element = input(error)
-                continue
             if element in List:
                 break
-            else:
-                element = input(error)
-                continue
+            element = str(input(error))
         import delete_list_element
-        print("New list : ",delete_list_element.delete_element(List , element))
+        print("New list : ",delete_list_element.delete_element(List , str(element)))
     case "3" :
         text = str(input("Enter the text : "))
         #text = "this ## is a #sample#test1 ###python #test2 #test3#test4 #is_hashtag not_hashtag##test5"
