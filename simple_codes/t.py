@@ -19,5 +19,5 @@ def find_hashtag(string):
 #______________________________________________________________
 text = str(input("Enter the text : "))
 #text = "this ## is a #sample#test1 ###python #test2 #test3#test4 #is_hashtag not_hashtag##test5"
-print("The main text is : " + text)
+#print("The main text is : " + text)
 print("Hashtags list : " , find_hashtag(text))
