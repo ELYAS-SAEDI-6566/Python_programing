@@ -1,5 +1,6 @@
 program_num = input("""[1] Count find def list     [2] Delete list element
 [3] Find hashtags           [4] Reverse text words
+[5] create matrix
 Enter the number of program you want to run : """)
 match program_num:
     case "1" :
@@ -30,3 +31,10 @@ match program_num:
         #text = "I Am from Iran it iS rainy and i like rain"
         import edit_text
         print(edit_text.reverse(text))
+    case "5" :
+        import matrix
+        matrix1 = matrix.create(10,10)
+        for i in matrix1 :
+            print(i)
+        element = str(input("Select element : "))
+        print(matrix.element_detail(matrix1 , element))
