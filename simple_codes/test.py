@@ -22,7 +22,7 @@ match program_num:
         print("New list : ",delete_list_element.delete_element(List , str(element)))
     case "3" :
         text = str(input("Enter the text : "))
-        #text = "this ## is a #sample#test1 ###python #test2 #test3#test4 #is_hashtag not_hashtag##test5"
+        #text = "this ## is a #sample#test1 not_hashtag1# ###python #test2 #test3#test4 #is_hashtag not_hashtag##test5"
         print("The main text is : " + text)
         import extract_hashtag
         print("Hashtags list : " , extract_hashtag.find_hashtag(text))
