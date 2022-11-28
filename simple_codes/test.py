@@ -1,6 +1,6 @@
 program_num = input("""[1] Count find def list     [2] Delete list element
 [3] Find hashtags           [4] Reverse text words
-[5] create matrix
+[5] matrix element detail
 Enter the number of program you want to run : """)
 match program_num:
     case "1" :
@@ -22,7 +22,7 @@ match program_num:
         print("New list : ",delete_list_element.delete_element(List , str(element)))
     case "3" :
         text = str(input("Enter the text : "))
-        #text = "this ## is a #sample#test1 not_hashtag1# ###python #test2 #test3#test4 #is_hashtag not_hashtag##test5"
+        #text = "this is a #sample ## #test . not_hashtag1# ### ###python #test3#test4 not_hashtag##test5"
         print("The main text is : " + text)
         import extract_hashtag
         print("Hashtags list : " , extract_hashtag.find_hashtag(text))
