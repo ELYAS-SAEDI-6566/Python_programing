@@ -1,2 +1,2 @@
-import peydayesh
-print(peydayesh.find(1, 2, 3))
+for i in 17 :
+    print(i)
