@@ -1,2 +1,2 @@
 import peydayesh
-print(peydayesh.find(2,1,3))
+print(peydayesh.find(1, 2, 3))
