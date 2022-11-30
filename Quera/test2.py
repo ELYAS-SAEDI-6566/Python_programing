@@ -1,4 +1,5 @@
-x  = {"sss" : 6}
-if "sss" not in x:
-    print("ok")
-    
+
+
+x = round(sqrt(number), 4)
+
+print( x*(10**4))
