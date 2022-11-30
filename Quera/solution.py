@@ -1,4 +1,4 @@
-#math area of shapes
+#________math area of shapes_________#
 def get_func(ls):
     def square (side):
         return side*side
@@ -20,7 +20,7 @@ def get_func(ls):
             case 'triangle':
                 funcs.append(triangle)
     return funcs
-#example
+#______________example____________#
 #ls = get_func(['square', 'circle', 'rectangle', 'triangle'])
 
 # print(ls[0](1))      # 1
