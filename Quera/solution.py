@@ -3,8 +3,7 @@ def fruits(tuple_of_fruits):
     for fruit in tuple_of_fruits :
         if fruit['shape'] == 'sphere' and 600 >= fruit['mass'] >= 300 and 500 >= fruit['volume'] >= 100 :
             if fruit["name"] not in result:
-                result[fruit["name"]] = 0
-                result[fruit["name"]] += 1
+                result[fruit["name"]] = 1
             else :
                 result[fruit["name"]] += 1
     return result
