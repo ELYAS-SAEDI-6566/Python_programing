@@ -10,15 +10,14 @@ def get_func(ls):
         return Height*base/2
     funcs = []
     for shape in ls:
-        match shape:
-            case 'square':
-                funcs.append(square)
-            case 'circle':
-                funcs.append(circle)
-            case 'rectangle':
-                funcs.append(rectangle)
-            case 'triangle':
-                funcs.append(triangle)
+        if shape == 'square':
+            funcs.append(square)
+        elif shape ==  'circle':
+            funcs.append(circle)
+        elif shape ==  'rectangle':
+            funcs.append(rectangle)
+        elif shape ==  'triangle':
+            funcs.append(triangle)
     return funcs
 #______________example____________#
 #ls = get_func(['square', 'circle', 'rectangle', 'triangle'])
