@@ -1,5 +1,5 @@
 value = str(input())
-nk = value.split(" ")
+nk = value.split()
 nk[0] = int(nk[0])
 nk[1] = int(nk[1])
 i = 1
