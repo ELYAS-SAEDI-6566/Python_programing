@@ -1,3 +1,4 @@
+#get fruits details and return bests of them
 def fruits(tuple_of_fruits): 
     result = {}
     for fruit in tuple_of_fruits :
