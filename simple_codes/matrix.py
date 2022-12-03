@@ -7,7 +7,7 @@ def create(I = int , J = int):
             row.append(str(random.randrange(100)))
         matrix.append(row)
     return matrix
-def element_detail(matrix , element):
+def element_position(matrix , element):
     List_of_details = []
     i = 0 ; j = 0
     for row in matrix:
