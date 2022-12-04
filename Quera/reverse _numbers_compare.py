@@ -1,16 +1,8 @@
 #Reverse two numbers and compare them
 num1 = str(input())
 num2 = str(input())
-num1L = []
-num2L = []
-for i in num1 :
-    num1L.append(i)
-for i in num2 :
-    num2L.append(i)
-num1L.reverse()
-num2L.reverse()
-num1R = ""
-num2R = ""
+num1R = num1[::-1]
+num2R = num2[::-1]
 for i in num1L :
     num1R += i
 for i in num2L :
