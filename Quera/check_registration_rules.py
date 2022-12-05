@@ -1,6 +1,6 @@
 # We have considered the following rules for username and password:
 
-# We want to keep the usernames quera and codecup for ourselves. No one is allowed to join with these usernames.
+# We want to keep the usernames 'quera' and 'codecup' for ourselves. No one is allowed to join with these usernames.
 # Username less than 4 characters is too short and is not allowed.
 # Also, for the security of users, a user whose password is less than 6 characters or only consists of numbers is not allowed to become a member.
 def check_registration_rules(**kwargs):
