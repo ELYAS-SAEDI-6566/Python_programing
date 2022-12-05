@@ -37,4 +37,4 @@ match program_num:
         for i in matrix1 :
             print(i)
         element = str(input("Select element : "))
-        print(matrix.element_detail(matrix1 , element))
+        print(matrix.element_position(matrix1 , element))
