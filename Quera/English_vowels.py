@@ -7,9 +7,8 @@ def get(word) :
     voises += word.count("u")
     return voises
 #______________example runable code______________#
-# import English_vowels
 # def test(word , number, testnum):
-#     if English_vowels.get(word) == number :
+#     if get(word) == number :
 #         print(f"test{testnum} {word} OK")
 #     else:
 #         print(f"wrong {testnum}")
