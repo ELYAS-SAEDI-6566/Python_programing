@@ -1,9 +1,5 @@
-line1 = "4 4"
-line2 = "277 30 971 789"
-line3 = "65 379 158 855"
-line4 = "892 92 267 454"
-line5 = "449 293 735 533"
-line6 = "2 3"
-line7 = "4 3"
-line8 = "1 3"
-line9 = "2 4"
+def x():
+    p = 1
+    return p
+    return p+1
+print(x())
