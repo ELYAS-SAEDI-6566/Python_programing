@@ -1,15 +1,31 @@
-x = int(input())
-result = True
-if x == 1:
-    print("fard")
-    exit()
-if x%2 == 0:
-    print("fard")
-else:
-    for i in range(2,x):
-        if x%i == 0:
-            result = False
-    if result :
-        print("zoj")
-    else:
-        print("fard")
+value = str(input())
+nk = value.split()
+n = int(nk[0])
+m = int(nk[1])
+row1 = ""
+row2 = ""
+#_______________________#
+for i in range(m):
+    row1 += "X"
+for i in range(m):
+    row1 += "."
+for i in range(m):
+    row1 += "X"
+#_______________________#
+for i in range(m):
+    row2 += "."
+for i in range(m):
+    row2 += "X"
+for i in range(m):
+    row2 += "."
+#_______________________#
+result = []
+for i in range(n):
+    result.append(row1)
+for i in range(n):
+    result.append(row2)
+for i in range(n):
+    result.append(row1)
+#_________________________#
+for i in result:
+    print(i)
