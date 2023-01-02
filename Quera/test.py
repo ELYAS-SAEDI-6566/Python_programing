@@ -1,31 +1,15 @@
 value = str(input())
-nk = value.split()
-n = int(nk[0])
-m = int(nk[1])
-row1 = ""
-row2 = ""
-#_______________________#
-for i in range(m):
-    row1 += "X"
-for i in range(m):
-    row1 += "."
-for i in range(m):
-    row1 += "X"
-#_______________________#
-for i in range(m):
-    row2 += "."
-for i in range(m):
-    row2 += "X"
-for i in range(m):
-    row2 += "."
-#_______________________#
-result = []
+nxk = value.split()
+n = int(nxk[0])
+x = int(nxk[1])
+k = int(nxk[2])
+TVs = []
 for i in range(n):
-    result.append(row1)
-for i in range(n):
-    result.append(row2)
-for i in range(n):
-    result.append(row1)
-#_________________________#
-for i in result:
-    print(i)
+    TVs.append(input())
+pointer = x-1
+for i in range(k):
+    if pointer == n-1:
+        pointer = 0
+    else:
+        pointer += 1
+print(TVs[pointer])
