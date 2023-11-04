@@ -1,4 +1,5 @@
 from collections import deque
+from tabulate import tabulate
 
 class PuzzleNode:
     def __init__(self, state, parent=None, action=None):
@@ -13,7 +14,7 @@ def get_possible_moves(state):
     moves = []
     for i in range(3):
         for j in range(3):
-            if state[i][j] == 0:
+            if state[i][j] == "":
                 if i > 0:
                     moves.append(("UP", (i, j), (i - 1, j)))
                 if i < 2:
@@ -55,20 +56,25 @@ def bfs_search(initial_state, goal_state):
             if tuple(map(tuple, next_state)) not in visited:
                 next_node = PuzzleNode(next_state, current_node, move[0])
                 queue.append(next_node)
-    
+            
     return None
 
 # Define the initial and goal states
 initial_state = [
     [2, 8, 3],
-    [1, 0, 4],
+    [1, "", 4],
     [7, 6, 5]
 ]
+# initial_state = [
+#     [1, 2, 3],
+#     [5, "", 6],
+#     [4, 7, 8]
+# ]
 
 goal_state = [
     [1, 2, 3],
     [4, 5, 6],
-    [7, 8, 0]
+    [7, 8, ""]
 ]
 
 # Perform the Breadth-First Search
@@ -78,8 +84,6 @@ if solution_path:
     print("Solution Found:")
     for step, state in solution_path:
         print("Action:", step)
-        for row in state:
-            print(row)
-        print()
+        print(tabulate(state ,tablefmt="simple_grid"))
 else:
     print("No solution found.")
