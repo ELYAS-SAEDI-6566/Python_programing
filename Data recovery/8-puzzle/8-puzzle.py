@@ -60,16 +60,16 @@ def bfs_search(initial_state, goal_state):
     return None
 
 # Define the initial and goal states
-initial_state = [
-    [2, 8, 3],
-    [1, "", 4],
-    [7, 6, 5]
-]
 # initial_state = [
-#     [1, 2, 3],
-#     [5, "", 6],
-#     [4, 7, 8]
+#     [2, 8, 3],
+#     [1, "", 4],
+#     [7, 6, 5]
 # ]
+initial_state = [
+    [1, 2, 3],
+    [5, "", 6],
+    [4, 7, 8]
+]
 
 goal_state = [
     [1, 2, 3],
